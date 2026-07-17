@@ -1,0 +1,14 @@
+id,name,status,docfor,is_verification_required,is_textbox,create_date,modify_date
+1,Aadhaar Card,1,1,1,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+2,Pan Card,1,1,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+3,CV,0,1,0,0,2023-01-24 17:39:07,2023-01-24 17:39:07
+4,GST,1,2,1,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+5,Passport,1,1,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+6,Driving License,1,1,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+7,Voter ID,1,1,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+8,Company Registration Certificate,1,2,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+9,Other,1,0,0,1,2023-01-24 17:39:07,2023-01-24 17:39:07
+10,Memorandum of Association (MOA),1,2,0,0,,
+11,Import Export Code (IEC),1,2,0,0,,
+12,MSME Registration,1,2,0,0,,
+13,GST Certificate,1,2,0,0,,

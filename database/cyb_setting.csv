@@ -1,0 +1,50 @@
+id,code,key,value,name,detail,status
+1,config,config_meta_title,Collarcheck,,,1
+2,config,config_meta_description,Collarcheck,,,1
+3,config,config_meta_keyword,Collarcheck,,,1
+4,config,config_tawkto,Collarcheck,,,1
+5,config,config_name,Collarcheck,,,1
+6,config,config_owner,Collarcheck,,,1
+7,config,gstin,,,,1
+8,config,pan,,,,1
+9,config,config_address,punjabi bagh,,,1
+10,config,config_geocode,,,,1
+11,config,config_google_iframe,                                     ,,,1
+12,config,config_email,info@collarcheck.com,,,1
+13,config,config_telephone,+91-8826988001,,,1
+14,config,config_fax,,,,1
+15,config,config_footer_note,llar Check is a web-based platform powered by highly secure anti-tamper technology,,,1
+16,config,config_copywrite,24 CollarCheck | All Rights Reserved.,,,1
+17,config,config_facebook,#,,,1
+18,config,config_twitter,#,,,1
+19,config,config_linkedin,#,,,1
+20,config,config_instagram,#,,,1
+21,config,config_pinterest,,,,1
+22,config,config_youtube,#,,,1
+23,config,config_mail_smtp_hostname,,,,1
+24,config,config_mail_smtp_username,,,,1
+25,config,config_mail_smtp_password,,,,1
+26,config,config_mail_smtp_port,,,,1
+27,config,collarcheck_honeypot,,,,1
+28,config,config_logo,uploads/profile/aa587c123e3d94e73e0f76e133f8ee71e4bfed32268a61ca1dd80bd98e1632f8.webp,,,1
+29,config,config_footer_logo,uploads/profile/eff2fc602c5fc1a7751d4a14058d7b948665163ba61c55df3d44d145b5662bf5.jpg,,,1
+30,config,config_favicon,uploads/profile/aa587c123e3d94e73e0f76e133f8ee71e4bfed32268a61ca1dd80bd98e1632f8.webp,,,1
+31,config,config_analytic,,,,1
+32,config,old_config_logo,uploads/images/1732515406_14666abb70dd2eb09311.webp,,,1
+33,config,old_config_favicon,uploads/images/1768384410_79ade3dfdc8122cb17c5.webp,,,1
+34,config,old_config_footer_logo,uploads/images/1732515406_ace4eaa1866e6c7ac3e5.jpg,,,1
+35,config,sending_email,no-reply@collarcheck.com,,,1
+36,config,contact_email,rakesh@sphumans.com,,,1
+37,config,splace_background_color,#A66BB5,,,1
+38,config,app_name,Collar check,,,1
+39,config,app_background_color,#A66BB5,,,1
+40,config,splace_sceen,https://ccpl-s3.s3.ap-south-1.amazonaws.com/https://ccpl-s3.s3.ap-south-1.amazonaws.com/https://ccpl-s3.s3.ap-south-1.amazonaws.com/https://ccpl-s3.s3.ap-south-1.amazonaws.com/https://ccpl-s3.s3.ap-south-1.amazonaws.com/https://ccpl-s3.s3.ap-south-1.,,,1
+41,config,app_logo,uploads/images/1740228735_5e4de832cd74acd2fed7.jpg,,,1
+42,config,app_tag_line,Technology that builds trust,,,1
+43,config,old_app_logo,uploads/images/1732515406_ecab53e7854d9ef45869.webp,,,1
+44,config,old_splace_sceen,uploads/images/1740229231_a497b064c7e0ba6cfb14.jpg,,,1
+45,config,alternate_email,kartik@sphumans.com,,,1
+46,config,honeypot,,,,1
+47,config,profile,uploads/profile/aa587c123e3d94e73e0f76e133f8ee71e4bfed32268a61ca1dd80bd98e1632f8.webp,,,1
+48,config,old_default_image,,,,1
+49,config,default_image,uploads/profile/402bb87c967ac32e233c747a321112c006a626256416acb00cf2b77c493edcc4.webp,,,1

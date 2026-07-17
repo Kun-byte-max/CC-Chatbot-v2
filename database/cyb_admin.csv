@@ -1,0 +1,13 @@
+id,username,permission,firstname,lastname,email,individual_id,password,user_group_id,photo,is_super,status,last_login,created_by,is_deleted,create_date,modify_date
+1,CcAdmin@2026#,"[\""3\"",\""4\"",\""5\"",\""6\"",\""7\"",\""8\"",\""9\"",\""10\"",\""11\"",\""13\"",\""69\"",\""15\"",\""16\"",\""17\"",\""18\"",\""19\"",\""20\"",\""21\"",\""70\"",\""73\"",\""75\"",\""77\"",\""78\"",\""23\"",\""24\"",\""25\"",\""26\"",\""72\"",\""28\"",\""29\"",\""74\"",\""39\"",\""40\"",\""41\"",\""60\"",\""62\"",\""43\"",\""44\"",\""55\"",\""56\"",\""65\"",\""46\"",\""47\"",\""80\"",\""81\"",\""48\"",\""49\"",\""50\"",\""51\"",\""52\"",\""53\"",\""54\"",\""57\"",\""58\"",\""59\"",\""61\"",\""63\"",\""64\"",\""79\""]",Collar Check,,info@collarcheck.com,,$2y$10$.rZISC7bp7b0kORlNWQlUebhx5V.TDXzzepV3YlGtq7mM2YIpVfAC,1,uploads/images/36af1920a6ab1af297f3d206af52ed3122b5a7a883687c63119d45702e9c64ad.png,1,1,2026-07-13 16:59:45,,0,2021-02-23 15:06:42,2026-07-04 15:32:44
+2,Avinash,,Avinash,Singh,Avinash@collarcheck.com,,$2y$10$u/Tr1tyvKQUaiesPWj26auqbUGzTGu9P2bf5Rgvidm0t1garPQ3Gm,2,,0,1,2025-05-19 16:18:09,,0,2025-05-19,2025-05-19
+3,laxmi,,laxmi,,laxmi@collarcheck.com,,$2y$10$izHCqYyLh2qMPaOz/Y7idOJ5ezvlnmZnAbcRAcEWtTBx2kv97QXXm,2,,0,1,2025-11-17 11:00:31,,0,2025-06-23,2025-09-04
+4,gopal,,Gopal,Tomar,gopal@collarcheck.com,,$2y$10$3LOLRjuA7Nj0pOekPTPWcuIo1ayWwmn9tvkYvZDVigKlAcb0E6bDe,3,,0,1,2025-10-16 15:50:41,,0,2025-07-05,2025-07-05
+5,nisarg,,nisarg,jha,nisarg@collarcheck.com,,$2y$10$Eqp2ks0ZUHWwH0ezIkF0buEgelqdrHlho8oWgsr.H57ChMExoEoEa,4,,0,1,2025-11-17 10:23:08,,0,2025-07-17,2025-09-12
+6,prashant,,parshant,,prashant@collarcheck.com,,$2y$10$j8vxSahlK3NAIPFQOFh/TezrmlXX5TEw7vq5UDvvspnZ9PYQefDOG,5,,0,1,2025-11-17 13:14:55,,0,2025-08-11,2025-08-20
+7,gagan,,Gagan,,gagan@collarcheck.com,,$2y$10$dPTafNMX4nhGsk8qcCo16Oe4s3gqWDcci71l7z/7ULqQr9fjZtRwC,5,,0,1,2025-09-15 18:53:57,,0,2025-08-18,2025-08-18
+8,Bittoo,,Bittoo,Kumar,do1@narulaexports.com,,$2y$10$PTWSgK3YS7nWOodWBUGCxemoNbB/dih7kjhAUf726DMxtJxN.9fuO,6,,0,1,2025-09-05 10:25:55,,0,2025-09-02,2025-09-02
+9,Kawaljeet,,Kawaljeet,Singh,kuwarjeet@collarcheck.com,,$2y$10$6RjRD7i/oAQFELfj/aOMB.09XxxobZvicLlJaP3tFK7R141oiuQmC,6,,0,1,2025-10-13 11:09:32,,0,2025-09-02,2025-09-09 13:12:50
+10,Ashok,,Ashok,,ashok@collarcheck.com,,$2y$10$eC9l9ET1uovD8qmXE08D/uyKh.LE3JihOsSIRtxZCio7DMyMhcjha,5,,0,1,2025-11-17 13:24:31,,0,2025-10-14,2025-10-14
+11,rakesh,,rakesh,,rakesh@sphumans.com,,$2y$10$bilYD2FE4BBirAf2as6yjuNlDyDCrhTTCubsRnqehO6aegXGWcJPq,8,,0,1,2026-04-14 12:50:38,,0,2025-12-13,2026-04-14
+12,shubham,,shubham,shubham,shubham,,$2y$10$oj3jWfSeQCiRMWbqFNvuwuH1FfSreVbqztTtvo1eQ.ajLaWGhelTu,1,,0,1,,,0,2026-06-06,2026-06-06

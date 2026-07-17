@@ -1,0 +1,29 @@
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Databases
+backend/collarcheck.db
+*.db
+*.sqlite3
+
+# Environment variables / Secrets
+.env*
+.env.local
+.env.*.local
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
