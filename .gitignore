@@ -19,6 +19,7 @@ backend/collarcheck.db
 
 # Environment variables / Secrets
 .env*
+!.env.example
 .env.local
 .env.*.local
 
@@ -27,3 +28,11 @@ backend/collarcheck.db
 .idea/
 .DS_Store
 Thumbs.db
+
+# Baseline Run Artifacts
+main_instrumented.py.bak
+baseline_run.log
+baseline_request_ids.txt
+baseline_analysis.txt
+baseline_uninstrumented_main.py
+baseline_instrumented_main.py

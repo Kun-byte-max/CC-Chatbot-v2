@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +17,16 @@
       --cc-teal: #00C2A8;
       --cc-teal-dk: #009E89;
       --cc-navy: #0B1F3A;
-      --shadow-md: 0 0 15px rgba(0,0,0,0.1);
+      --shadow-md: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -94,8 +101,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: .4; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .4;
+      }
     }
 
     .btn-signup {
@@ -110,7 +124,10 @@
       text-decoration: none;
       transition: background .2s;
     }
-    .btn-signup:hover { background: var(--cc-teal-dk); }
+
+    .btn-signup:hover {
+      background: var(--cc-teal-dk);
+    }
 
     /* ── MAIN ────────────────────────────────────── */
     .chat-wrapper {
@@ -128,8 +145,14 @@
       padding-bottom: 140px;
     }
 
-    .messages::-webkit-scrollbar { width: 6px; }
-    .messages::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+    .messages::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .messages::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
 
     /* ── HERO ────────────────────────────────────── */
     .chat-hero {
@@ -139,7 +162,9 @@
       margin: 0 auto;
     }
 
-    .chat-hero.hidden { display: none; }
+    .chat-hero.hidden {
+      display: none;
+    }
 
     .hero-avatar {
       width: 64px;
@@ -153,7 +178,7 @@
       font-size: 24px;
       color: white;
       margin: 0 auto 20px;
-      box-shadow: 0 4px 20px rgba(0,194,168,.25);
+      box-shadow: 0 4px 20px rgba(0, 194, 168, .25);
     }
 
     .hero-title {
@@ -199,8 +224,17 @@
       color: var(--text-main);
     }
 
-    .chip strong { display: block; color: var(--text-main); margin-bottom: 3px; font-size: 13px; }
-    .chip span { font-size: 12px; color: #888; }
+    .chip strong {
+      display: block;
+      color: var(--text-main);
+      margin-bottom: 3px;
+      font-size: 13px;
+    }
+
+    .chip span {
+      font-size: 12px;
+      color: #888;
+    }
 
     /* ── MESSAGE ROWS ────────────────────────────── */
     .msg {
@@ -211,11 +245,21 @@
       animation: msgIn 0.25s ease;
     }
 
-    .msg.bot { background: var(--bg-bot); border-bottom: 1px solid rgba(0,0,0,.03); }
+    .msg.bot {
+      background: var(--bg-bot);
+      border-bottom: 1px solid rgba(0, 0, 0, .03);
+    }
 
     @keyframes msgIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .msg-content-wrapper {
@@ -256,14 +300,43 @@
       word-wrap: break-word;
     }
 
-    .bubble ul, .bubble ol { padding-left: 22px; margin: 10px 0; }
-    .bubble li { margin-bottom: 5px; }
-    .bubble strong { font-weight: 600; }
-    .bubble em { font-style: italic; }
-    .bubble a { color: var(--cc-teal-dk); text-decoration: underline; }
-    .bubble p { margin-bottom: 10px; }
-    .bubble p:last-child { margin-bottom: 0; }
-    .bubble h3, .bubble h4 { font-weight: 600; margin: 12px 0 6px; }
+    .bubble ul,
+    .bubble ol {
+      padding-left: 22px;
+      margin: 10px 0;
+    }
+
+    .bubble li {
+      margin-bottom: 5px;
+    }
+
+    .bubble strong {
+      font-weight: 600;
+    }
+
+    .bubble em {
+      font-style: italic;
+    }
+
+    .bubble a {
+      color: var(--cc-teal-dk);
+      text-decoration: underline;
+    }
+
+    .bubble p {
+      margin-bottom: 10px;
+    }
+
+    .bubble p:last-child {
+      margin-bottom: 0;
+    }
+
+    .bubble h3,
+    .bubble h4 {
+      font-weight: 600;
+      margin: 12px 0 6px;
+    }
+
     .bubble code {
       background: #f4f4f5;
       padding: 2px 6px;
@@ -288,12 +361,24 @@
       animation: blink 1.4s infinite both;
     }
 
-    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
-    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    .typing-dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .typing-dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
 
     @keyframes blink {
-      0%, 100% { opacity: 0.2; }
-      20% { opacity: 1; }
+
+      0%,
+      100% {
+        opacity: 0.2;
+      }
+
+      20% {
+        opacity: 1;
+      }
     }
 
     /* ── INPUT AREA ──────────────────────────────── */
@@ -302,7 +387,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%);
       padding: 0 20px 20px;
       display: flex;
       flex-direction: column;
@@ -324,7 +409,7 @@
 
     .input-box:focus-within {
       border-color: var(--cc-teal);
-      box-shadow: 0 0 0 2px rgba(0,194,168,.1), var(--shadow-md);
+      box-shadow: 0 0 0 2px rgba(0, 194, 168, .1), var(--shadow-md);
     }
 
     .resume-banner {
@@ -332,14 +417,16 @@
       align-items: center;
       gap: 8px;
       background: #f0fdf9;
-      border: 1px solid rgba(0,194,168,.3);
+      border: 1px solid rgba(0, 194, 168, .3);
       border-radius: 8px;
       padding: 6px 10px;
       font-size: 13px;
       color: var(--cc-teal-dk);
     }
 
-    .resume-banner.visible { display: flex; }
+    .resume-banner.visible {
+      display: flex;
+    }
 
     .resume-name {
       font-weight: 500;
@@ -356,7 +443,10 @@
       color: #999;
       font-size: 14px;
     }
-    .resume-remove:hover { color: #e05252; }
+
+    .resume-remove:hover {
+      color: #e05252;
+    }
 
     .input-row {
       display: flex;
@@ -380,7 +470,10 @@
       transition: all .15s;
     }
 
-    .action-btn:hover { background: #f4f4f5; color: var(--text-main); }
+    .action-btn:hover {
+      background: #f4f4f5;
+      color: var(--text-main);
+    }
 
     #msgInput {
       flex: 1;
@@ -397,7 +490,9 @@
       background: transparent;
     }
 
-    #msgInput::placeholder { color: #9b9b9b; }
+    #msgInput::placeholder {
+      color: #9b9b9b;
+    }
 
     .send-btn {
       width: 34px;
@@ -413,10 +508,24 @@
       transition: background .18s;
     }
 
-    .send-btn:hover { background: var(--cc-teal-dk); }
-    .send-btn:disabled { background: #e5e5e5; cursor: not-allowed; }
-    .send-btn svg { width: 16px; height: 16px; fill: white; }
-    .send-btn:disabled svg { fill: #a1a1aa; }
+    .send-btn:hover {
+      background: var(--cc-teal-dk);
+    }
+
+    .send-btn:disabled {
+      background: #e5e5e5;
+      cursor: not-allowed;
+    }
+
+    .send-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+
+    .send-btn:disabled svg {
+      fill: #a1a1aa;
+    }
 
     .footer-meta {
       text-align: center;
@@ -425,22 +534,30 @@
       margin-top: 10px;
     }
 
-    .footer-meta a { color: var(--text-muted); text-decoration: underline; }
-    .footer-meta a:hover { color: var(--cc-teal-dk); }
+    .footer-meta a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+
+    .footer-meta a:hover {
+      color: var(--cc-teal-dk);
+    }
 
     /* ── SETTINGS MODAL ──────────────────────────── */
     .modal-overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,.4);
+      background: rgba(0, 0, 0, .4);
       z-index: 200;
       align-items: center;
       justify-content: center;
       backdrop-filter: blur(2px);
     }
 
-    .modal-overlay.open { display: flex; }
+    .modal-overlay.open {
+      display: flex;
+    }
 
     .modal {
       background: var(--bg-main);
@@ -448,14 +565,31 @@
       padding: 24px;
       width: 100%;
       max-width: 400px;
-      box-shadow: 0 8px 30px rgba(0,0,0,.15);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
     }
 
-    .modal h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+    .modal h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
 
-    .modal p { font-size: 13px; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5; }
+    .modal p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
 
-    .modal label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; }
+    .modal label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
 
     .modal input {
       width: 100%;
@@ -468,9 +602,15 @@
       font-family: inherit;
     }
 
-    .modal input:focus { border-color: var(--cc-teal); }
+    .modal input:focus {
+      border-color: var(--cc-teal);
+    }
 
-    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; }
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
 
     .btn-primary {
       background: var(--cc-navy);
@@ -483,7 +623,10 @@
       cursor: pointer;
       font-family: inherit;
     }
-    .btn-primary:hover { background: var(--cc-teal-dk); }
+
+    .btn-primary:hover {
+      background: var(--cc-teal-dk);
+    }
 
     .btn-ghost {
       background: transparent;
@@ -509,296 +652,1178 @@
       font-size: 13px;
       z-index: 300;
       transition: transform .3s ease;
-      box-shadow: 0 4px 14px rgba(0,0,0,.2);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
       white-space: nowrap;
     }
 
-    .toast.show { transform: translateX(-50%) translateY(0); }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
 
-    #resumeFile { display: none; }
+    #resumeFile {
+      display: none;
+    }
 
     @media (max-width: 600px) {
-      .chat-hero { padding: 36px 16px 20px; }
-      .hero-title { font-size: 20px; }
-      .input-wrapper { padding: 0 10px 12px; }
-      .msg { padding: 14px 12px; }
-      .quick-chips { grid-template-columns: 1fr 1fr; }
+      .chat-hero {
+        padding: 36px 16px 20px;
+      }
+
+      .hero-title {
+        font-size: 20px;
+      }
+
+      .input-wrapper {
+        padding: 0 10px 12px;
+      }
+
+      .msg {
+        padding: 14px 12px;
+      }
+
+      .quick-chips {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ── PROTOTYPE AUTH LOGIN PAGE STYLE (PROTOTYPE ONLY) ── */
+    .login-container {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #0B1F3A 0%, #001220 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+      transition: opacity 0.3s ease;
+    }
+
+    .login-container.hidden {
+      display: none !important;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      animation: cardIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes cardIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .login-logo {
+      width: 64px;
+      height: 64px;
+      background: var(--cc-teal);
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 24px rgba(0, 194, 168, 0.3);
+    }
+
+    .login-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #0B1F3A;
+      margin-bottom: 8px;
+    }
+
+    .login-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .form-group input[type="email"]:focus {
+      border-color: var(--cc-teal);
+      box-shadow: 0 0 0 3px rgba(0, 194, 168, 0.15);
+    }
+
+    .role-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .role-option {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: white;
+      transition: all 0.2s;
+    }
+
+    .role-option.active {
+      border-color: var(--cc-teal);
+      background: #f0fdf9;
+      color: var(--cc-teal-dk);
+      box-shadow: 0 0 0 3px rgba(0, 194, 168, 0.15);
+    }
+
+    .btn-login {
+      width: 100%;
+      background: var(--cc-navy);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 10px;
+    }
+
+    .btn-login:hover {
+      background: var(--cc-teal-dk);
+      box-shadow: 0 4px 12px rgba(0, 194, 168, 0.2);
+    }
+
+    .user-profile-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f4f4f5;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+    }
+
+    .user-role-badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: var(--cc-teal);
+      color: white;
+    }
+
+    .user-role-badge.employer {
+      background: var(--cc-navy);
+    }
+
+    .user-email-label {
+      font-size: 13px;
+      color: var(--text-main);
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .btn-logout {
+      font-size: 12px;
+      font-weight: 500;
+      color: #e05252;
+      background: transparent;
+      border: 1px solid rgba(224, 82, 82, 0.3);
+      border-radius: 12px;
+      padding: 2px 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    /* ── STRUCTURED CARDS ────────────────────────── */
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .job-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .job-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: var(--cc-teal);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .card-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .badge-teal {
+      background: #E6F8F5;
+      color: var(--cc-teal-dk);
+    }
+
+    .badge-navy {
+      background: #EAEFF5;
+      color: var(--cc-navy);
+    }
+
+    /* 🎓 Education Playcard Styling */
+    .edu-card {
+      border-left: 4px solid #6366F1;
+      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+    }
+
+    .edu-card:hover {
+      border-color: #4F46E5;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.14);
+    }
+
+    .edu-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .edu-icon-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: #EEF2FF;
+      color: #4F46E5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .badge-purple {
+      background: #EEF2FF;
+      color: #4338CA;
+    }
+
+    .badge-gold {
+      background: #FEF3C7;
+      color: #92400E;
+      font-weight: 600;
+    }
+
+    .card-action-btn.edu-action-btn {
+      background: #4338CA;
+    }
+
+    .card-action-btn.edu-action-btn:hover {
+      background: #3730A3;
+    }
+
+    .card-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0;
+    }
+
+    .detail-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+      background: #F4F4F5;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .card-preview-container {
+      margin-bottom: 10px;
+    }
+
+    .card-preview {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .card-preview.collapsed {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-preview.expanded {
+      display: block;
+      overflow: visible;
+      word-break: break-word;
+      -webkit-line-clamp: unset;
+    }
+
+    .read-more-btn {
+      background: none;
+      border: none;
+      color: #0071e3;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 2px;
+      display: inline-block;
+    }
+
+    .read-more-btn:hover {
+      text-decoration: underline;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-top: 1px solid #F0F0F0;
+      padding-top: 10px;
+      margin-top: 6px;
+    }
+
+    .match-reason {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--cc-teal-dk);
+      flex: 1 1 200px;
+      word-break: break-word;
+    }
+
+    .card-action-btn {
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      background: var(--cc-navy);
+      text-decoration: none;
+      padding: 5px 12px;
+      border-radius: 6px;
+      transition: background 0.18s;
+    }
+
+    .card-action-btn:hover {
+      background: var(--cc-teal-dk);
     }
   </style>
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<nav class="topbar">
-  <a class="topbar-brand" href="https://www.collarcheck.com" target="_blank">
-    <div class="logo-badge">CC</div>
-    <span>CollarCheck AI</span>
-  </a>
-  <div class="topbar-right">
-    <div class="status-pill">
-      <div class="status-dot"></div>
-      Online
+  <!-- LOGIN CONTAINER (PROTOTYPE ONLY) -->
+  <div class="login-container" id="loginContainer">
+    <div class="login-card">
+      <div class="login-logo">CC</div>
+      <h2 class="login-title">Welcome to CollarCheck AI</h2>
+      <p class="login-subtitle">Where Credibility Connects Careers! Enter your email and select your role to proceed.
+      </p>
+
+      <div class="form-group">
+        <label for="loginEmail">Email Address</label>
+        <input type="email" id="loginEmail" placeholder="name@company.com or candidate@gmail.com" required />
+      </div>
+
+      <div class="form-group">
+        <label>I want to log in as:</label>
+        <div class="role-selector">
+          <label class="role-option active" id="roleEmployeeLabel">
+            <input type="radio" name="loginRole" value="employee" checked style="display:none;" />
+            👨‍💻 Employee
+          </label>
+          <label class="role-option" id="roleEmployerLabel">
+            <input type="radio" name="loginRole" value="employer" style="display:none;" />
+            💼 Employer
+          </label>
+        </div>
+      </div>
+
+      <button class="btn-login" onclick="performLogin()">Access AI Assistant</button>
     </div>
-    <button class="action-btn" onclick="openSettings()" title="Settings">⚙️</button>
-    <a class="btn-signup" href="https://www.collarcheck.com/signup" target="_blank">Sign Up Free</a>
   </div>
-</nav>
 
-<!-- MAIN -->
-<div class="chat-wrapper">
-  <div class="messages" id="messages">
-    <!-- HERO -->
-    <div class="chat-hero" id="heroSection">
-      <div class="hero-avatar">CC</div>
-      <h1 class="hero-title">How can I help you today?</h1>
-      <p class="hero-sub">Your AI assistant for CollarCheck — India's first professional identity verification platform. Ask about jobs, profiles, ratings, or upload your resume.</p>
+  <!-- TOP BAR -->
+  <nav class="topbar">
+    <a class="topbar-brand" href="https://www.collarcheck.com" target="_blank">
+      <div class="logo-badge">CC</div>
+      <span>CollarCheck AI</span>
+    </a>
+    <div class="topbar-right">
+      <div class="status-pill">
+        <div class="status-dot"></div>
+        Online
+      </div>
+      <button class="action-btn" onclick="openSettings()" title="Settings">⚙️</button>
+      <div class="user-profile-badge" id="userProfileBadge" style="display: none;">
+        <span class="user-role-badge" id="userRoleBadge"></span>
+        <span class="user-email-label" id="userEmailLabel"></span>
+        <button class="btn-logout" onclick="performLogout()">Logout</button>
+      </div>
+      <a class="btn-signup" id="signUpBtn" href="https://www.collarcheck.com/signup" target="_blank">Sign Up Free</a>
+    </div>
+  </nav>
 
-      <div class="quick-chips">
-        <button class="chip" onclick="askChip('What is CollarCheck and how does it work?')">
-          <strong>What is CollarCheck?</strong>
-          <span>Learn the basics</span>
-        </button>
-        <button class="chip" onclick="askChip('How can I improve my CollarCheck profile rating?')">
-          <strong>Improve my rating</strong>
-          <span>Boost your profile</span>
-        </button>
-        <button class="chip" onclick="askChip('Show me current job openings on CollarCheck')">
-          <strong>Browse live jobs</strong>
-          <span>Find vacancies now</span>
-        </button>
-        <button class="chip" onclick="askChip('What is a CC ID and how is it different from LinkedIn?')">
-          <strong>CC ID explained</strong>
-          <span>Understand your identity</span>
-        </button>
-        <button class="chip" onclick="askChip('How do I create a CollarCheck profile step by step?')">
-          <strong>Create my profile</strong>
-          <span>Get started</span>
-        </button>
-        <button class="chip" onclick="askChip('Is CollarCheck free for employers and job seekers?')">
-          <strong>Pricing & costs</strong>
-          <span>Is it really free?</span>
-        </button>
+  <!-- MAIN -->
+  <div class="chat-wrapper">
+    <div class="messages" id="messages">
+      <!-- HERO -->
+      <div class="chat-hero" id="heroSection">
+        <div class="hero-avatar">CC</div>
+        <h1 class="hero-title" id="heroTitle">How can I help you today?</h1>
+        <p class="hero-sub">Your AI assistant for CollarCheck — India's first professional identity verification
+          platform. Ask about jobs, profiles, ratings, or upload your resume.</p>
+
+        <div class="quick-chips">
+          <button class="chip" onclick="askChip('What is CollarCheck and how does it work?')">
+            <strong>What is CollarCheck?</strong>
+            <span>Learn the basics</span>
+          </button>
+          <button class="chip" onclick="askChip('How can I improve my CollarCheck profile rating?')">
+            <strong>Improve my rating</strong>
+            <span>Boost your profile</span>
+          </button>
+          <button class="chip" onclick="askChip('Show me current job openings on CollarCheck')">
+            <strong>Browse live jobs</strong>
+            <span>Find vacancies now</span>
+          </button>
+          <button class="chip" onclick="askChip('What is a CC ID and how is it different from LinkedIn?')">
+            <strong>CC ID explained</strong>
+            <span>Understand your identity</span>
+          </button>
+          <button class="chip" onclick="askChip('How do I create a CollarCheck profile step by step?')">
+            <strong>Create my profile</strong>
+            <span>Get started</span>
+          </button>
+          <button class="chip" onclick="askChip('Is CollarCheck free for employers and job seekers?')">
+            <strong>Pricing & costs</strong>
+            <span>Is it really free?</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- INPUT AREA -->
+    <div class="input-wrapper">
+      <div class="input-box">
+        <div class="resume-banner" id="resumeBanner">
+          <span>📄</span>
+          <span class="resume-name" id="resumeName"></span>
+          <button class="resume-remove" onclick="clearResume()" title="Remove">✕</button>
+        </div>
+
+        <div class="input-row">
+          <button class="action-btn" onclick="document.getElementById('resumeFile').click()"
+            title="Upload Resume (PDF/TXT)">📎</button>
+          <button class="action-btn" onclick="clearChat()" title="New chat">🗑️</button>
+          <textarea id="msgInput" rows="1" placeholder="Message CollarCheck AI..." onkeydown="handleKey(event)"
+            oninput="autoGrow(this)"></textarea>
+          <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+            <svg viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-meta">
+        CollarCheck AI may occasionally make mistakes.
+        <a href="https://www.collarcheck.com/help-center" target="_blank">Help Center</a> ·
+        <a href="https://www.collarcheck.com/faq" target="_blank">FAQs</a> ·
+        <a href="https://www.collarcheck.com/contact" target="_blank">Contact</a>
       </div>
     </div>
   </div>
 
-  <!-- INPUT AREA -->
-  <div class="input-wrapper">
-    <div class="input-box">
-      <div class="resume-banner" id="resumeBanner">
-        <span>📄</span>
-        <span class="resume-name" id="resumeName"></span>
-        <button class="resume-remove" onclick="clearResume()" title="Remove">✕</button>
-      </div>
-
-      <div class="input-row">
-        <button class="action-btn" onclick="document.getElementById('resumeFile').click()" title="Upload Resume (PDF/TXT)">📎</button>
-        <button class="action-btn" onclick="clearChat()" title="New chat">🗑️</button>
-        <textarea id="msgInput" rows="1"
-          placeholder="Message CollarCheck AI..."
-          onkeydown="handleKey(event)"
-          oninput="autoGrow(this)"></textarea>
-        <button class="send-btn" id="sendBtn" onclick="sendMessage()">
-          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-        </button>
+  <!-- SETTINGS MODAL -->
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal">
+      <h2>⚙️ Settings</h2>
+      <p>Configure the backend connection. Your settings are stored locally in this browser.</p>
+      <label>Backend URL</label>
+      <input type="text" id="backendInput" placeholder="http://localhost:8001" />
+      <label>Groq API Key (optional)</label>
+      <input type="password" id="apiKeyInput" placeholder="gsk_..." />
+      <div class="modal-actions">
+        <button class="btn-ghost" onclick="closeSettings()">Cancel</button>
+        <button class="btn-primary" onclick="saveSettings()">Save</button>
       </div>
     </div>
-    <div class="footer-meta">
-      CollarCheck AI may occasionally make mistakes.
-      <a href="https://www.collarcheck.com/help-center" target="_blank">Help Center</a> ·
-      <a href="https://www.collarcheck.com/faq" target="_blank">FAQs</a> ·
-      <a href="https://www.collarcheck.com/contact" target="_blank">Contact</a>
-    </div>
   </div>
-</div>
 
-<!-- SETTINGS MODAL -->
-<div class="modal-overlay" id="settingsModal">
-  <div class="modal">
-    <h2>⚙️ Settings</h2>
-    <p>Configure the backend connection. Your settings are stored locally in this browser.</p>
-    <label>Backend URL</label>
-    <input type="text" id="backendInput" placeholder="http://localhost:8001" />
-    <label>Groq API Key (optional)</label>
-    <input type="password" id="apiKeyInput" placeholder="gsk_..." />
-    <div class="modal-actions">
-      <button class="btn-ghost" onclick="closeSettings()">Cancel</button>
-      <button class="btn-primary" onclick="saveSettings()">Save</button>
-    </div>
-  </div>
-</div>
+  <input type="file" id="resumeFile" accept=".txt,.pdf" onchange="handleResumeUpload(event)" />
+  <div class="toast" id="toast"></div>
 
-<input type="file" id="resumeFile" accept=".txt,.pdf" onchange="handleResumeUpload(event)" />
-<div class="toast" id="toast"></div>
+  <script>
+    // ── STATE ──────────────────────────────────────
+    let conversationHistory = [];
+    let resumeContext = null;
+    let resumeFileName = null;
+    let backendURL = 'http://localhost:8001';
+    localStorage.setItem('cc_backend', 'http://localhost:8001');
+    const CC_WAPI_BASE_URL = 'https://api.collarcheck.com/wapi';
+    let apiKey = sessionStorage.getItem('cc_api_key') || '';
+    let isWaiting = false;
 
-<script>
-  // ── STATE ──────────────────────────────────────
-  let conversationHistory = [];
-  let resumeContext = null;
-  let resumeFileName = null;
-  let backendURL = localStorage.getItem('cc_backend') || 'http://localhost:8001';
-  let apiKey = sessionStorage.getItem('cc_api_key') || '';
-  let isWaiting = false;
-
-  // ── HELPERS ────────────────────────────────────
-  function autoGrow(el) {
-    el.style.height = 'auto';
-    el.style.height = Math.min(el.scrollHeight, 180) + 'px';
-  }
-
-  function handleKey(e) {
-    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
-  }
-
-  function showToast(msg, color = '#1a1a1a') {
-    const t = document.getElementById('toast');
-    t.textContent = msg;
-    t.style.background = color;
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3000);
-  }
-
-  function scrollToBottom() {
-    const el = document.getElementById('messages');
-    el.scrollTop = el.scrollHeight;
-  }
-
-  function hideHero() {
-    const hero = document.getElementById('heroSection');
-    if (hero) hero.style.display = 'none';
-  }
-
-  // ── SETTINGS ───────────────────────────────────
-  function openSettings() {
-    document.getElementById('backendInput').value = backendURL;
-    document.getElementById('apiKeyInput').value = apiKey;
-    document.getElementById('settingsModal').classList.add('open');
-  }
-
-  function closeSettings() {
-    document.getElementById('settingsModal').classList.remove('open');
-  }
-
-  function saveSettings() {
-    backendURL = document.getElementById('backendInput').value.trim().replace(/\/$/, '') || 'http://localhost:8001';
-    apiKey = document.getElementById('apiKeyInput').value.trim();
-    localStorage.setItem('cc_backend', backendURL);
-    if (apiKey) sessionStorage.setItem('cc_api_key', apiKey);
-    closeSettings();
-    showToast('✅ Settings saved!');
-  }
-
-  // ── RESUME ─────────────────────────────────────
-  async function handleResumeUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    if (file.size > 2 * 1024 * 1024) { showToast('File too large. Max 2MB.', '#e05252'); return; }
-    resumeFileName = file.name;
-    hideHero();
-
-    if (file.name.endsWith('.txt')) {
-      const text = await file.text();
-      resumeContext = text.slice(0, 8000);
-      showResumeBanner();
-      addBotMessage('📄 Resume uploaded! Ask me to <strong>"analyse my resume"</strong> or <strong>"find jobs for my background"</strong> and I\'ll get started.');
-    } else if (file.name.endsWith('.pdf')) {
-      const formData = new FormData();
-      formData.append('file', file);
-      try {
-        const resp = await fetch(`${backendURL}/parse-resume`, { method: 'POST', body: formData });
-        if (!resp.ok) throw new Error();
-        const data = await resp.json();
-        resumeContext = data.text;
-        showResumeBanner();
-        addBotMessage('📄 PDF resume loaded! Ask me to <strong>"analyse my resume"</strong> and I\'ll review it thoroughly.');
-      } catch {
-        showToast('⚠️ Could not parse PDF. Try saving as .txt.', '#e05252');
+    // ── PROTOTYPE AUTH STATE & LOGIC (PROTOTYPE ONLY) ──
+    let authToken = localStorage.getItem('cc_auth_token') || '';
+    let authRole = localStorage.getItem('cc_auth_role') || '';
+    let authEmail = localStorage.getItem('cc_auth_email') || '';
+    let authUser = null;
+    try {
+      const storedUser = localStorage.getItem('cc_user');
+      if (storedUser) {
+        authUser = JSON.parse(storedUser);
       }
+    } catch (e) {
+      console.error("Error reading cc_user from localStorage:", e);
     }
-    event.target.value = '';
-  }
 
-  function showResumeBanner() {
-    document.getElementById('resumeName').textContent = '📎 ' + resumeFileName;
-    document.getElementById('resumeBanner').classList.add('visible');
-  }
+    function initAuthState() {
+      const loginContainer = document.getElementById('loginContainer');
+      const badge = document.getElementById('userProfileBadge');
+      const signUpBtn = document.getElementById('signUpBtn');
 
-  function clearResume() {
-    resumeContext = null;
-    resumeFileName = null;
-    document.getElementById('resumeBanner').classList.remove('visible');
-    showToast('Resume removed.');
-  }
+      if (authToken) {
+        if (loginContainer) loginContainer.classList.add('hidden');
+        if (badge) {
+          badge.style.display = 'flex';
+          const roleBadge = document.getElementById('userRoleBadge');
+          const emailLabel = document.getElementById('userEmailLabel');
+          roleBadge.textContent = authRole;
+          roleBadge.className = 'user-role-badge ' + authRole;
+          
+          let userObj = authUser;
+          if (!userObj) {
+            try {
+              const storedUser = localStorage.getItem('cc_user');
+              if (storedUser) userObj = JSON.parse(storedUser);
+            } catch (e) {}
+          }
+          
+          if (userObj) {
+            const fname = userObj.fname || '';
+            const lname = userObj.lname || '';
+            const fullName = `${fname} ${lname}`.trim();
+            emailLabel.textContent = fullName ? `${fullName} (${authEmail})` : authEmail;
+            
+            const locDetails = (userObj.city_name || userObj.state_name) 
+              ? ` | Location: ${[userObj.city_name, userObj.state_name].filter(Boolean).join(', ')}`
+              : '';
+            emailLabel.title = `ID: ${userObj.individual_id || 'N/A'} | Phone: ${userObj.phone || 'N/A'}${locDetails}`;
+          } else {
+            emailLabel.textContent = authEmail;
+            emailLabel.removeAttribute('title');
+          }
+        }
+        if (signUpBtn) signUpBtn.style.display = 'none';
 
-  // ── MARKDOWN RENDERER ──────────────────────────
-  function renderMarkdown(text) {
-    // Headers
-    text = text.replace(/^### (.+)$/gm, '<h4>$1</h4>');
-    text = text.replace(/^## (.+)$/gm, '<h3>$1</h3>');
-    // Bold / italic
-    text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-    text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
-    // Links
-    text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
-    // Inline code
-    text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
-    // Lists
-    const lines = text.split('\n');
-    let inList = false;
-    let result = [];
-    for (let line of lines) {
-      const isItem = /^\s*[-•]\s+/.test(line) || /^\s*\d+\.\s+/.test(line);
-      if (isItem) {
-        if (!inList) { result.push('<ul>'); inList = true; }
-        const content = line.replace(/^\s*[-•]\s+/, '').replace(/^\s*\d+\.\s+/, '');
-        result.push(`<li>${content}</li>`);
+        const heroTitle = document.getElementById('heroTitle');
+        if (heroTitle) {
+          if (authRole === 'employer') {
+            heroTitle.textContent = "Search Top Candidates & Talents";
+          } else {
+            heroTitle.textContent = "How can I help you today?";
+          }
+        }
       } else {
-        if (inList) { result.push('</ul>'); inList = false; }
-        result.push(line);
+        if (loginContainer) loginContainer.classList.remove('hidden');
+        if (badge) badge.style.display = 'none';
+        if (signUpBtn) signUpBtn.style.display = '';
       }
     }
-    if (inList) result.push('</ul>');
-    text = result.join('\n');
-    // Paragraphs
-    text = text.replace(/\n\n/g, '</p><p>');
-    text = text.replace(/\n/g, '<br>');
-    if (!text.startsWith('<')) text = '<p>' + text + '</p>';
-    return text;
-  }
 
-  // ── MESSAGES ───────────────────────────────────
-  function addUserMessage(text) {
-    const msgs = document.getElementById('messages');
-    const div = document.createElement('div');
-    div.className = 'msg user';
-    div.innerHTML = `
+    async function performLogin() {
+      const email = document.getElementById('loginEmail').value.trim();
+      const roleRadio = document.querySelector('input[name="loginRole"]:checked');
+      if (!email) { showToast('Please enter an email address.', '#e05252'); return; }
+      if (!roleRadio) { showToast('Please select a role.', '#e05252'); return; }
+      const role = roleRadio.value;
+
+      try {
+        const resp = await fetch(`${backendURL}/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, role })
+        });
+        if (!resp.ok) {
+          throw new Error('Login failed. Please check credentials/role.');
+        }
+        const data = await resp.json();
+        authToken = data.access_token;
+        authRole = role;
+        authEmail = email;
+        authUser = data.user;
+
+        localStorage.setItem('auth_token', authToken);
+        localStorage.setItem('token', authToken);
+        localStorage.setItem('cc_auth_token', authToken);
+        localStorage.setItem('cc_auth_role', authRole);
+        localStorage.setItem('cc_auth_email', authEmail);
+        localStorage.setItem('cc_user', JSON.stringify(authUser));
+        localStorage.setItem('cc_login_response', JSON.stringify(data));
+
+        showToast('✅ Login successful!', '#00C2A8');
+        initAuthState();
+        fetchEmployeeDetails();
+        fetchRandomWidgets();
+        fetchAdminUserProfile();
+        fetchAllEmploymentNew();
+      } catch (e) {
+        showToast('⚠️ ' + e.message, '#e05252');
+      }
+    }
+
+    function performLogout() {
+      authToken = '';
+      authRole = '';
+      authEmail = '';
+      authUser = null;
+      currentUserDetail = null;
+      currentWidgetsData = null;
+      currentAdminUserProfile = null;
+      currentAllEmploymentNew = null;
+      localStorage.removeItem('auth_token');
+      localStorage.removeItem('token');
+      localStorage.removeItem('cc_auth_token');
+      localStorage.removeItem('cc_auth_role');
+      localStorage.removeItem('cc_auth_email');
+      localStorage.removeItem('cc_user');
+      localStorage.removeItem('cc_login_response');
+      localStorage.removeItem('user_slug');
+      clearChat();
+      initAuthState();
+    }
+
+    let userLocation = sessionStorage.getItem('cc_user_location') || null;
+    let userCoords = null;
+    let currentUserDetail = null;
+    let currentWidgetsData = null;
+
+    function isNearbyQuery(text) {
+      return /\b(near\s+me|nearby|around\s+me|close\s+to\s+me|in\s+my\s+area|closest|organizations\s+near|companies\s+near)\b/i.test(text || "");
+    }
+
+    async function getUserCoordinates() {
+      return new Promise((resolve) => {
+        if (!navigator.geolocation) {
+          console.warn("Geolocation API not supported");
+          resolve(null);
+          return;
+        }
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            resolve({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+          },
+          (err) => {
+            console.warn("Geolocation permission denied or failed:", err.message);
+            resolve(null);
+          },
+          { timeout: 8000, maximumAge: 600000 }
+        );
+      });
+    }
+
+    async function reverseGeocodeCoords(lat, lon) {
+      try {
+        const resp = await fetch(`${backendURL}/reverse-geocode`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ latitude: lat, longitude: lon })
+        });
+        if (resp.ok) {
+          const data = await resp.json();
+          if (data.location_str && data.location_str !== 'Unknown Location') {
+            return data.location_str;
+          }
+        }
+      } catch (e) {
+        console.error("Failed to reverse geocode on backend:", e);
+      }
+      return null;
+    }
+
+    async function detectUserLocation() {
+      if (userLocation) return;
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        const data = await res.json();
+        if (data.region || data.city) {
+          userLocation = data.region || data.city;
+          sessionStorage.setItem('cc_user_location', userLocation);
+          console.log("Auto-scanned location:", userLocation);
+        }
+      } catch (e) {
+        console.log("Using default fallback location:", userLocation);
+      }
+    }
+
+    async function fetchUserDetails() {
+      const token = localStorage.getItem("auth_token") || 
+                    localStorage.getItem("token") || 
+                    localStorage.getItem("cc_auth_token") || 
+                    sessionStorage.getItem("auth_token") || 
+                    authToken;
+
+      if (!token) {
+        console.log("No active login token found. Skipping fetchUserDetails.");
+        return;
+      }
+
+      let userId = '';
+      try {
+        const userStr = localStorage.getItem('cc_user');
+        if (userStr) {
+          const u = JSON.parse(userStr);
+          userId = u.id || u.individual_id || '';
+        }
+      } catch (e) {}
+
+      try {
+        const targetUrl = `${backendURL}/api/response/employee/user-detail`;
+        const response = await fetch(targetUrl, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/plain, */*",
+            "Authorization": token.startsWith("Bearer ") ? token : `Bearer ${token}`,
+            "X-Auth-Token": token,
+            "X-User-Id": String(userId)
+          }
+        });
+
+        if (!response.ok) {
+          if (response.status === 401) {
+            console.error("Unauthorized: Invalid token.");
+          }
+          throw new Error(`HTTP Error: ${response.status}`);
+        }
+
+        const result = await response.json();
+        currentUserDetail = result.data || result;
+        console.log("Employee details loaded:", currentUserDetail);
+        displayUserProfile(currentUserDetail);
+        fetchAdminUserProfile();
+        fetchAllEmploymentNew();
+
+      } catch (error) {
+        console.error("Failed to load user details:", error);
+      }
+    }
+
+    function displayUserProfile(userData) {
+      if (!userData) return;
+      console.log("Employee Profile Loaded:", userData.full_name || userData.fname || userData.individual_id || userData.id);
+      const slugVal = userData.slug || userData.user_slug || (userData.data ? (userData.data.slug || userData.data.user_slug) : null);
+      if (slugVal) {
+        localStorage.setItem('user_slug', slugVal);
+      }
+      if (userData.profile_percentage != null) {
+        const brandBadge = document.querySelector('.topbar-brand span');
+        if (brandBadge) {
+          brandBadge.title = `Profile Complete: ${userData.profile_percentage}%`;
+        }
+      }
+    }
+
+    async function fetchRandomWidgets() {
+      const token = localStorage.getItem("auth_token") || 
+                    localStorage.getItem("token") || 
+                    localStorage.getItem("cc_auth_token") || 
+                    sessionStorage.getItem("auth_token") || 
+                    authToken || '';
+
+      let userId = '';
+      try {
+        const userStr = localStorage.getItem('cc_user');
+        if (userStr) {
+          const u = JSON.parse(userStr);
+          userId = u.id || u.individual_id || '';
+        }
+      } catch (e) {}
+
+      try {
+        const targetUrl = `${backendURL}/api/response/random-widget`;
+        const headers = {
+          "Content-Type": "application/json",
+          "Accept": "application/json, text/plain, */*"
+        };
+        if (token) {
+          headers["Authorization"] = token.startsWith("Bearer ") ? token : `Bearer ${token}`;
+          headers["X-Auth-Token"] = token;
+        }
+        if (userId) {
+          headers["X-User-Id"] = String(userId);
+        }
+        const response = await fetch(targetUrl, {
+          method: "GET",
+          headers
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          currentWidgetsData = result.data || result;
+          console.log("Random widget loaded successfully:", currentWidgetsData);
+        }
+      } catch (error) {
+        console.error("Failed to fetch random widget:", error);
+      }
+    }
+
+    async function fetchAdminUserProfile(slugInput) {
+      let userSlug = slugInput || '';
+
+      if (!userSlug) {
+        try {
+          const userStr = localStorage.getItem('cc_user');
+          if (userStr) {
+            const u = JSON.parse(userStr);
+            userSlug = u.slug || u.user_slug || '';
+          }
+        } catch (e) {}
+      }
+
+      if (!userSlug && typeof currentUserDetail !== 'undefined' && currentUserDetail) {
+        userSlug = currentUserDetail.slug || currentUserDetail.user_slug || (currentUserDetail.data ? (currentUserDetail.data.slug || currentUserDetail.data.user_slug) : '');
+      }
+
+      if (!userSlug) {
+        userSlug = localStorage.getItem('user_slug') || sessionStorage.getItem('user_slug') || '';
+      }
+
+      try {
+        const token = localStorage.getItem("auth_token") || 
+                      localStorage.getItem("token") || 
+                      localStorage.getItem("cc_auth_token") || 
+                      sessionStorage.getItem("auth_token") || 
+                      authToken || '';
+
+        if (!token) {
+          console.log("No token found. Skipping fetchAdminUserProfile.");
+          return;
+        }
+
+        const targetUrl = userSlug ? `${backendURL}/api/response/auth/user-profile/${encodeURIComponent(userSlug)}` : `${backendURL}/api/response/auth/user-profile`;
+        const headers = {
+          "Content-Type": "application/json",
+          "Accept": "application/json, text/plain, */*",
+          "Authorization": token.startsWith("Bearer ") ? token : `Bearer ${token}`,
+          "X-Auth-Token": token
+        };
+        const response = await fetch(targetUrl, {
+          method: "GET",
+          headers
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          currentAdminUserProfile = result.data || result;
+          console.log("Admin user profile loaded successfully:", currentAdminUserProfile);
+        } else {
+          console.warn("Failed to fetch admin user profile, status:", response.status);
+        }
+      } catch (error) {
+        console.error("Failed to fetch admin user profile:", error);
+      }
+    }
+
+    async function fetchAllEmploymentNew() {
+      try {
+        const token = localStorage.getItem("auth_token") || 
+                      localStorage.getItem("token") || 
+                      localStorage.getItem("cc_auth_token") || 
+                      sessionStorage.getItem("auth_token") || 
+                      authToken || '';
+
+        if (!token) {
+          console.log("No token found. Skipping fetchAllEmploymentNew.");
+          return;
+        }
+
+        const targetUrl = `${backendURL}/api/response/employee/allEmployementNew`;
+        const headers = {
+          "Content-Type": "application/json",
+          "Accept": "application/json, text/plain, */*",
+          "Authorization": token.startsWith("Bearer ") ? token : `Bearer ${token}`,
+          "X-Auth-Token": token
+        };
+        const response = await fetch(targetUrl, {
+          method: "GET",
+          headers
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          currentAllEmploymentNew = result.data || result;
+          console.log("All employment new loaded successfully:", currentAllEmploymentNew);
+        } else {
+          console.warn("Failed to fetch all employment new data, status:", response.status);
+        }
+      } catch (error) {
+        console.error("Failed to fetch all employment new data:", error);
+      }
+    }
+
+
+
+    const fetchEmployeeDetails = fetchUserDetails;
+    const updateUserProfile = displayUserProfile;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      detectUserLocation();
+      initAuthState();
+      fetchEmployeeDetails();
+      fetchRandomWidgets();
+
+
+
+      // Role selector UI bindings
+      const roleEmployee = document.getElementById('roleEmployeeLabel');
+      const roleEmployer = document.getElementById('roleEmployerLabel');
+      if (roleEmployee && roleEmployer) {
+        roleEmployee.addEventListener('click', () => {
+          roleEmployee.classList.add('active');
+          roleEmployee.querySelector('input').checked = true;
+          roleEmployer.classList.remove('active');
+        });
+        roleEmployer.addEventListener('click', () => {
+          roleEmployer.classList.add('active');
+          roleEmployer.querySelector('input').checked = true;
+          roleEmployee.classList.remove('active');
+        });
+      }
+    });
+
+
+    // ── HELPERS ────────────────────────────────────
+    function autoGrow(el) {
+      el.style.height = 'auto';
+      el.style.height = Math.min(el.scrollHeight, 180) + 'px';
+    }
+
+    function handleKey(e) {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+    }
+
+    function showToast(msg, color = '#1a1a1a') {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.background = color;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    function scrollToBottom() {
+      const el = document.getElementById('messages');
+      el.scrollTop = el.scrollHeight;
+    }
+
+    function hideHero() {
+      const hero = document.getElementById('heroSection');
+      if (hero) hero.style.display = 'none';
+    }
+
+    // ── SETTINGS ───────────────────────────────────
+    function openSettings() {
+      document.getElementById('backendInput').value = backendURL;
+      document.getElementById('apiKeyInput').value = apiKey;
+      document.getElementById('settingsModal').classList.add('open');
+    }
+
+    function closeSettings() {
+      document.getElementById('settingsModal').classList.remove('open');
+    }
+
+    function saveSettings() {
+      backendURL = document.getElementById('backendInput').value.trim().replace(/\/$/, '') || 'http://localhost:8001';
+      apiKey = document.getElementById('apiKeyInput').value.trim();
+      localStorage.setItem('cc_backend', backendURL);
+      if (apiKey) sessionStorage.setItem('cc_api_key', apiKey);
+      closeSettings();
+      showToast('✅ Settings saved!');
+    }
+
+    // ── RESUME ─────────────────────────────────────
+    async function handleResumeUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 2 * 1024 * 1024) { showToast('File too large. Max 2MB.', '#e05252'); return; }
+      resumeFileName = file.name;
+      hideHero();
+
+      if (file.name.endsWith('.txt')) {
+        const text = await file.text();
+        resumeContext = text.slice(0, 8000);
+        showResumeBanner();
+        addBotMessage('📄 Resume uploaded! Ask me to <strong>"analyse my resume"</strong> or <strong>"find jobs for my background"</strong> and I\'ll get started.');
+      } else if (file.name.endsWith('.pdf')) {
+        const formData = new FormData();
+        formData.append('file', file);
+        try {
+          const resp = await fetch(`${backendURL}/parse-resume`, { method: 'POST', body: formData });
+          if (!resp.ok) throw new Error();
+          const data = await resp.json();
+          resumeContext = data.text;
+          showResumeBanner();
+          addBotMessage('📄 PDF resume loaded! Ask me to <strong>"analyse my resume"</strong> and I\'ll review it thoroughly.');
+        } catch {
+          showToast('⚠️ Could not parse PDF. Try saving as .txt.', '#e05252');
+        }
+      }
+      event.target.value = '';
+    }
+
+    function showResumeBanner() {
+      document.getElementById('resumeName').textContent = '📎 ' + resumeFileName;
+      document.getElementById('resumeBanner').classList.add('visible');
+    }
+
+    function clearResume() {
+      resumeContext = null;
+      resumeFileName = null;
+      document.getElementById('resumeBanner').classList.remove('visible');
+      showToast('Resume removed.');
+    }
+
+    // ── MARKDOWN RENDERER ──────────────────────────
+    function renderMarkdown(text) {
+      // Headers
+      text = text.replace(/^### (.+)$/gm, '<h4>$1</h4>');
+      text = text.replace(/^## (.+)$/gm, '<h3>$1</h3>');
+      // Bold / italic
+      text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      // Links
+      text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+      // Inline code
+      text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+      // Lists
+      const lines = text.split('\n');
+      let inList = false;
+      let result = [];
+      for (let line of lines) {
+        const isItem = /^\s*[-•]\s+/.test(line) || /^\s*\d+\.\s+/.test(line);
+        if (isItem) {
+          if (!inList) { result.push('<ul>'); inList = true; }
+          const content = line.replace(/^\s*[-•]\s+/, '').replace(/^\s*\d+\.\s+/, '');
+          result.push(`<li>${content}</li>`);
+        } else {
+          if (inList) { result.push('</ul>'); inList = false; }
+          result.push(line);
+        }
+      }
+      if (inList) result.push('</ul>');
+      text = result.join('\n');
+      // Paragraphs
+      text = text.replace(/\n\n/g, '</p><p>');
+      text = text.replace(/\n/g, '<br>');
+      if (!text.startsWith('<')) text = '<p>' + text + '</p>';
+      return text;
+    }
+
+    // ── MESSAGES ───────────────────────────────────
+    function addUserMessage(text) {
+      const msgs = document.getElementById('messages');
+      const div = document.createElement('div');
+      div.className = 'msg user';
+      div.innerHTML = `
       <div class="msg-content-wrapper">
         <div class="msg-avatar">U</div>
         <div class="bubble">${text.replace(/\n/g, '<br>')}</div>
       </div>`;
-    msgs.appendChild(div);
-    scrollToBottom();
-  }
+      msgs.appendChild(div);
+      scrollToBottom();
+    }
 
-  function addBotMessage(html) {
-    const msgs = document.getElementById('messages');
-    const div = document.createElement('div');
-    div.className = 'msg bot';
-    div.innerHTML = `
+    function addBotMessage(html) {
+      const msgs = document.getElementById('messages');
+      const div = document.createElement('div');
+      div.className = 'msg bot';
+      div.innerHTML = `
       <div class="msg-content-wrapper">
         <div class="msg-avatar">CC</div>
         <div class="bubble">${html}</div>
       </div>`;
-    msgs.appendChild(div);
-    scrollToBottom();
-  }
+      msgs.appendChild(div);
+      scrollToBottom();
+    }
 
-  function addTypingIndicator() {
-    const msgs = document.getElementById('messages');
-    const div = document.createElement('div');
-    div.className = 'msg bot';
-    div.id = 'typingMsg';
-    div.innerHTML = `
+    function addTypingIndicator() {
+      const msgs = document.getElementById('messages');
+      const div = document.createElement('div');
+      div.className = 'msg bot';
+      div.id = 'typingMsg';
+      div.innerHTML = `
       <div class="msg-content-wrapper">
         <div class="msg-avatar">CC</div>
         <div class="bubble">
@@ -809,87 +1834,344 @@
           </div>
         </div>
       </div>`;
-    msgs.appendChild(div);
-    scrollToBottom();
-  }
-
-  function removeTypingIndicator() {
-    const el = document.getElementById('typingMsg');
-    if (el) el.remove();
-  }
-
-  // ── SEND MESSAGE ───────────────────────────────
-  async function sendMessage() {
-    if (isWaiting) return;
-    const input = document.getElementById('msgInput');
-    const text = input.value.trim();
-    if (!text) return;
-
-    hideHero();
-    addUserMessage(text);
-    conversationHistory.push({ role: 'user', content: text });
-    input.value = '';
-    input.style.height = 'auto';
-
-    isWaiting = true;
-    document.getElementById('sendBtn').disabled = true;
-    addTypingIndicator();
-
-    try {
-      const body = {
-        messages: conversationHistory,
-        resume_context: resumeContext || undefined
-      };
-
-      const headers = { 'Content-Type': 'application/json' };
-      if (apiKey) headers['X-API-Key'] = apiKey;
-
-      const resp = await fetch(`${backendURL}/chat`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(body)
-      });
-
-      if (!resp.ok) {
-        const err = await resp.json().catch(() => ({}));
-        throw new Error(err.detail || `Server error ${resp.status}`);
-      }
-
-      const data = await resp.json();
-      removeTypingIndicator();
-
-      const reply = data.reply;
-      conversationHistory.push({ role: 'assistant', content: reply });
-      addBotMessage(renderMarkdown(reply));
-
-    } catch (err) {
-      removeTypingIndicator();
-      addBotMessage(`<strong>⚠️ Connection Error:</strong> ${err.message}<br><br>
-        Make sure the backend is running at <code>${backendURL}</code>.<br>
-        Click ⚙️ in the top bar to update the backend URL.`);
+      msgs.appendChild(div);
+      scrollToBottom();
     }
 
-    isWaiting = false;
-    document.getElementById('sendBtn').disabled = false;
-    document.getElementById('msgInput').focus();
-  }
+    function removeTypingIndicator() {
+      const el = document.getElementById('typingMsg');
+      if (el) el.remove();
+    }
 
-  function askChip(text) {
-    document.getElementById('msgInput').value = text;
-    sendMessage();
-  }
+    // ── SEND MESSAGE ───────────────────────────────
+    async function sendMessage() {
+      if (isWaiting) return;
+      const input = document.getElementById('msgInput');
+      const text = input.value.trim();
+      if (!text) return;
 
-  function clearChat() {
-    conversationHistory = [];
-    const msgs = document.getElementById('messages');
-    // Remove all except hero
-    Array.from(msgs.children).forEach(child => {
-      if (child.id !== 'heroSection') child.remove();
-    });
-    const hero = document.getElementById('heroSection');
-    if (hero) hero.style.display = '';
-    clearResume();
-  }
-</script>
+      // Request location once if nearby keywords are used and location is not yet stored
+      if (isNearbyQuery(text) && !userLocation) {
+        showToast('📍 Requesting location permission...', '#00C2A8');
+        const coords = await getUserCoordinates();
+        if (coords) {
+          userCoords = coords;
+          const resolvedLoc = await reverseGeocodeCoords(coords.latitude, coords.longitude);
+          if (resolvedLoc) {
+            userLocation = resolvedLoc;
+            sessionStorage.setItem('cc_user_location', userLocation);
+            showToast(`📍 Location set: ${userLocation}`, '#00C2A8');
+          }
+        }
+      }
+
+      hideHero();
+      addUserMessage(text);
+      conversationHistory.push({ role: 'user', content: text });
+      input.value = '';
+      input.style.height = 'auto';
+
+      isWaiting = true;
+      document.getElementById('sendBtn').disabled = true;
+      addTypingIndicator();
+
+      try {
+        const body = {
+          messages: conversationHistory,
+          resume_context: resumeContext || undefined,
+          user_location: userLocation || undefined,
+          latitude: userCoords ? userCoords.latitude : undefined,
+          longitude: userCoords ? userCoords.longitude : undefined,
+          user_detail: currentUserDetail || undefined,
+          widgets_data: currentWidgetsData || undefined
+        };
+
+        const headers = {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${authToken}`
+        };
+        if (apiKey) headers['X-API-Key'] = apiKey;
+
+        const resp = await fetch(`${backendURL}/chat`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify(body)
+        });
+
+        if (resp.status === 401) {
+          performLogout();
+          showToast('Session expired. Please log in again.', '#e05252');
+          return;
+        }
+
+        if (!resp.ok) {
+          const err = await resp.json().catch(() => ({}));
+          throw new Error(err.detail || `Server error ${resp.status}`);
+        }
+
+        const data = await resp.json();
+        removeTypingIndicator();
+
+        const reply = data.reply;
+        conversationHistory.push({ role: 'assistant', content: reply });
+        
+        let html = renderMarkdown(reply);
+        const results = data.results || data.jobs || data.candidates;
+        if (results && results.length > 0) {
+          html += renderCardsHtml(results, data.result_type || (data.jobs ? 'jobs' : 'candidates'), data.pagination);
+        }
+        addBotMessage(html);
+
+      } catch (err) {
+        removeTypingIndicator();
+        addBotMessage(`<strong>⚠️ Connection Error:</strong> ${err.message}<br><br>
+        Make sure the backend is running at <code>${backendURL}</code>.<br>
+        Click ⚙️ in the top bar to update the backend URL.`);
+      }
+
+      isWaiting = false;
+      document.getElementById('sendBtn').disabled = false;
+      document.getElementById('msgInput').focus();
+    }
+
+    function askChip(text) {
+      document.getElementById('msgInput').value = text;
+      sendMessage();
+    }
+
+    function clearChat() {
+      conversationHistory = [];
+      const msgs = document.getElementById('messages');
+      // Remove all except hero
+      Array.from(msgs.children).forEach(child => {
+        if (child.id !== 'heroSection') child.remove();
+      });
+      const hero = document.getElementById('heroSection');
+      if (hero) hero.style.display = '';
+      clearResume();
+    }
+
+    function renderCardsHtml(results, resultType, pagination) {
+      if (!results || !results.length) return '';
+      
+      let html = '';
+      if (pagination && pagination.total_results > 0) {
+        html += `
+          <div class="job-results-header" style="margin-top: 10px; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #00C2A8; display: flex; justify-content: space-between; align-items: center;">
+            <span>Recommended Jobs</span>
+            <span style="font-size: 12px; color: #565869; font-weight: 400;">Showing ${pagination.start_index}–${pagination.end_index} of ${pagination.total_results}</span>
+          </div>
+        `;
+      }
+
+      html += '<div class="cards-container">';
+      results.forEach(item => {
+        if (resultType === 'education' || item.qualification || item.university_name) {
+          const qualification = item.qualification || item.course_name || 'Degree / Qualification';
+          const institution = item.institution || item.university_name || 'Educational Institution';
+          const courseType = item.course_type || 'Full Time';
+          const location = item.location || '';
+          
+          let dates = '';
+          if (item.start_date && item.end_date) {
+            dates = `${item.start_date} to ${item.end_date}`;
+          } else if (item.start_date) {
+            dates = `Started: ${item.start_date}`;
+          } else if (item.end_date) {
+            dates = `Completed: ${item.end_date}`;
+          }
+
+          const isHighest = Boolean(item.is_highest || item.ishighest);
+          const url = item.url || 'https://www.collarcheck.com/dashboard/user/education';
+          const matchReason = item.match_reason || 'Verified Academic Qualification';
+
+          html += `
+            <div class="job-card edu-card">
+              <div class="card-header">
+                <div class="edu-title-group">
+                  <div class="edu-icon-badge">🎓</div>
+                  <div>
+                    <h4 class="card-title">${escapeHtml(qualification)}</h4>
+                    <p class="card-subtitle">🏛️ ${escapeHtml(institution)}</p>
+                  </div>
+                </div>
+                ${courseType ? `<span class="badge badge-purple">${escapeHtml(courseType)}</span>` : ''}
+              </div>
+              <div class="card-details">
+                ${location ? `<span class="detail-tag">📍 ${escapeHtml(location)}</span>` : ''}
+                ${dates ? `<span class="detail-tag">📅 ${escapeHtml(dates)}</span>` : ''}
+                ${isHighest ? `<span class="detail-tag badge-gold">⭐ Highest Qualification</span>` : ''}
+              </div>
+              <div class="card-footer">
+                <span class="match-reason">${escapeHtml(matchReason)}</span>
+                <a href="${url}" target="_blank" class="card-action-btn edu-action-btn">Manage Education →</a>
+              </div>
+            </div>
+          `;
+        } else if (resultType === 'nearby_organizations' || item.org_id) {
+          const name = item.name || 'Organization';
+          const loc = item.location || [item.city, item.state].filter(Boolean).join(', ') || '';
+          const industry = item.industry || '';
+          const size = item.company_size || '';
+          const distLabel = item.distance_label || (item.distance != null ? `📍 ${item.distance} km away` : '');
+          const matchReason = item.match_reason || distLabel || '📍 Nearby Organization';
+          const url = item.url || '#';
+
+          html += `
+            <div class="job-card org-card">
+              <div class="card-header">
+                <div>
+                  <h4 class="card-title">${escapeHtml(name)}</h4>
+                  <p class="card-subtitle">${escapeHtml(industry)}${size ? ' • ' + escapeHtml(size) : ''}</p>
+                </div>
+                ${distLabel ? `<span class="badge badge-teal">${escapeHtml(distLabel)}</span>` : ''}
+              </div>
+              <div class="card-details">
+                ${loc ? `<span class="detail-tag">📍 ${escapeHtml(loc)}</span>` : ''}
+                ${size ? `<span class="detail-tag">🏢 ${escapeHtml(size)}</span>` : ''}
+              </div>
+              <div class="card-footer">
+                <span class="match-reason">${escapeHtml(matchReason)}</span>
+                <a href="${url}" target="_blank" class="card-action-btn">View Organization →</a>
+              </div>
+            </div>
+          `;
+        } else if (resultType === 'jobs' || resultType === 'urgent_jobs' || item.job_id) {
+          const title = item.title || 'Job';
+          const company = item.company || '';
+          const department = item.department || '';
+          const location = item.location || '';
+          const mode = item.job_mode || '';
+          const exp = item.experience || '';
+          const salary = item.salary || '';
+          const url = item.url || '#';
+          const matchReason = item.match_reason || '';
+          const rawFull = item.description || item.job_description || item.preview || '';
+          const cleanFullDesc = cleanDescriptionText(rawFull).replace(/[\.…]+$/, '');
+          const isLong = cleanFullDesc.length > 90;
+          const vacancy = item.vacancy ? `${item.vacancy} Vacanc${item.vacancy > 1 ? 'ies' : 'y'}` : '';
+
+          html += `
+            <div class="job-card">
+              <div class="card-header">
+                <div>
+                  <h4 class="card-title">${escapeHtml(title)}</h4>
+                  <p class="card-subtitle">${escapeHtml(company)}${department ? ' • ' + escapeHtml(department) : ''}</p>
+                </div>
+                ${mode ? `<span class="badge badge-teal">${escapeHtml(mode)}</span>` : ''}
+              </div>
+              <div class="card-details">
+                ${location ? `<span class="detail-tag">📍 ${escapeHtml(location)}</span>` : ''}
+                ${exp ? `<span class="detail-tag">💼 ${escapeHtml(exp)}</span>` : ''}
+                ${salary ? `<span class="detail-tag">💰 ${escapeHtml(salary)}</span>` : ''}
+                ${vacancy ? `<span class="detail-tag">👥 ${escapeHtml(vacancy)}</span>` : ''}
+              </div>
+              ${cleanFullDesc ? `
+                <div class="card-preview-container">
+                  <p class="card-preview ${isLong ? 'collapsed' : ''}">${escapeHtml(cleanFullDesc)}</p>
+                  ${isLong ? `<button type="button" class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>` : ''}
+                </div>
+              ` : ''}
+              <div class="card-footer" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                ${matchReason ? `<span class="match-reason">✨ ${escapeHtml(matchReason)}</span>` : '<span></span>'}
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <button type="button" class="card-action-btn-secondary" onclick="askChip('Why was job #${item.global_rank || 1} recommended?')" style="background: transparent; color: #00C2A8; border: 1px solid #00C2A8; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Why this job?</button>
+                  <a href="${url}" target="_blank" class="card-action-btn">Apply Now →</a>
+                </div>
+              </div>
+
+            </div>
+          `;
+        } else {
+          // Candidate card
+          const name = item.name || 'Candidate';
+          const pos = item.position || item.headline || '';
+          const loc = [item.city, item.state].filter(Boolean).join(', ') || item.location || '';
+          const exp = item.experience_label || item.experience || '';
+          const skills = Array.isArray(item.skills) ? item.skills.slice(0, 4).join(', ') : '';
+          const url = item.url || '#';
+          const matchReason = item.match_reason || '';
+
+          html += `
+            <div class="job-card candidate-card">
+              <div class="card-header">
+                <div>
+                  <h4 class="card-title">${escapeHtml(name)}</h4>
+                  <p class="card-subtitle">${escapeHtml(pos)}</p>
+                </div>
+                ${exp ? `<span class="badge badge-navy">${escapeHtml(exp)}</span>` : ''}
+              </div>
+              <div class="card-details">
+                ${loc ? `<span class="detail-tag">📍 ${escapeHtml(loc)}</span>` : ''}
+                ${skills ? `<span class="detail-tag">🛠️ ${escapeHtml(skills)}</span>` : ''}
+              </div>
+              <div class="card-footer">
+                ${matchReason ? `<span class="match-reason">✨ ${escapeHtml(matchReason)}</span>` : '<span></span>'}
+                <a href="${url}" target="_blank" class="card-action-btn">View Profile →</a>
+              </div>
+            </div>
+          `;
+        }
+      });
+      html += '</div>';
+
+      if (pagination && pagination.total_pages > 1) {
+        const prevDisabled = !pagination.has_prev ? 'disabled style="opacity: 0.4; cursor: not-allowed; padding: 4px 12px; border-radius: 4px; border: 1px solid #ccc; background: #fff;"' : 'style="cursor: pointer; padding: 4px 12px; border-radius: 4px; border: 1px solid #00C2A8; background: #fff; color: #00C2A8; font-weight: 600;"';
+        const nextDisabled = !pagination.has_next ? 'disabled style="opacity: 0.4; cursor: not-allowed; padding: 4px 12px; border-radius: 4px; border: 1px solid #ccc; background: #fff;"' : 'style="cursor: pointer; padding: 4px 12px; border-radius: 4px; border: 1px solid #00C2A8; background: #fff; color: #00C2A8; font-weight: 600;"';
+
+        html += `
+          <div class="pagination-bar" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 10px; padding: 8px; background: #F7F7F8; border-radius: 8px; border: 1px solid #E5E5E5;">
+            <button onclick="askChip('previous page')" class="page-btn" ${prevDisabled}>◀ Previous</button>
+            <span style="font-weight: 600; font-size: 13px; color: #0D0D0D;">Page ${pagination.current_page} of ${pagination.total_pages}</span>
+            <button onclick="askChip('next page')" class="page-btn" ${nextDisabled}>Next ▶</button>
+          </div>
+        `;
+      }
+
+      return html;
+    }
+
+    function cleanDescriptionText(str) {
+      if (!str) return '';
+      let txt = String(str);
+      txt = txt.replace(/<[^>]+>/g, ' ');
+      txt = txt.replace(/&nbsp;/gi, ' ')
+               .replace(/&amp;/gi, '&')
+               .replace(/&lt;/gi, '<')
+               .replace(/&gt;/gi, '>')
+               .replace(/&quot;/gi, '"')
+               .replace(/&#39;/gi, "'");
+      txt = txt.replace(/\s+/g, ' ').trim();
+      return txt;
+    }
+
+    function toggleReadMore(btn) {
+      const container = btn.closest('.card-preview-container');
+      if (!container) return;
+      const previewEl = container.querySelector('.card-preview');
+      if (!previewEl) return;
+      const isCollapsed = previewEl.classList.contains('collapsed');
+
+      if (isCollapsed) {
+        previewEl.classList.remove('collapsed');
+        previewEl.classList.add('expanded');
+        btn.innerText = 'Read Less';
+      } else {
+        previewEl.classList.remove('expanded');
+        previewEl.classList.add('collapsed');
+        btn.innerText = 'Read More';
+      }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+  </script>
 </body>
+
 </html>

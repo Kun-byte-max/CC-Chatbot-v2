@@ -1,8 +1,0 @@
-id,session,weight,type,weight_type,status,is_deleted,create_date,modify_date
-1,Latest Session,0.5,latest,1,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-2,1 Pervious Session,0.3,previous,1,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-3,All other Sessions,0.2,others,1,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-4,Session Average (Part 1),0.3,session_avg,2,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-5,Progressive session (Part 2),0.4,progressive,2,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-6,Criteria Lifetime Score (Part 3),0.3,criteria_lifetime,2,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
-7,Unique Criteria,,unique_criteria,2,1,0,2026-03-23 12:03:30,2026-03-23 12:03:30
